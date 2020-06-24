@@ -1,3 +1,4 @@
+
 :root {
   --primary-text-color: #a0a0a0;
   --title-text-color: #212121;
@@ -8,6 +9,17 @@
   --portfolio-button: #F5F4FA;
   --portfolio-text: #757575;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .page {
   background-color: var(--white-title-text-color);
   color: var(--primary-text-color);
@@ -27,8 +39,19 @@ ul {
   font-size: 26px;
   line-height: 1.19;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
 /*site-nav*/
-
+}
+.site-nav {
+  display: inline-block;
+}
 .site-nav .link {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
@@ -61,28 +84,30 @@ ul {
 /* main*/
 .hero {
   letter-spacing: 0.06em;
+  text-align: center;
 }
 .hero .hero-title,
 .hero .hero-link {
   color: var(--white-title-text-color);
 }
 .hero .hero-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  white-space: pre-line;
 }
 .hero .button {
-  font-weight: 700;
+  margin-top: 30px;
+
+  font-weight: 700;   
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
+  
 }
-
 .section-title {
   color: var(--title-text-color);
 
@@ -91,9 +116,14 @@ ul {
   line-height: 1.17;
   text-align: center;
 }
+.section-title.skills {
+  padding-top: 65px;
+}
 .advantages .advantages-title {
   color: var(--title-text-color);
 
+  margin-top: 30px;
+  margin-bottom: 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -102,6 +132,8 @@ ul {
 .advantages-text {
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 .specialty-title {
   color: var(--white-title-text-color);
@@ -115,6 +147,8 @@ ul {
 .team-title {
   color: var(--title-text-color);
 
+  margin-top: 30px;
+  margin-bottom: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -128,6 +162,8 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -136,7 +172,13 @@ ul {
 .button {
   color: var(--white-title-text-color);
   background-color: var(--accent-color);
-  font-family: inherit;
+
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+
 }
 /*footer*/
 .socials-link:hover,
