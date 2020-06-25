@@ -49,17 +49,21 @@
       <section class="portfolio-page">
         <div class="container">
           <h1 class="portfolio-main-title">Портфолио</h1>
-          <ul class="button-link">
-            <li class="button-item"><button type="button">Все</button></li>
+          <ul class="button-list">
             <li class="button-item">
-              <button type="button">Веб-сайты</button>
+              <button class="buttons" type="button">Все</button>
             </li>
             <li class="button-item">
-              <button type="button">Приложения</button>
+              <button class="buttons" type="button">Веб-сайты</button>
             </li>
-            <li class="button-item"><button type="button">Дизайн</button></li>
             <li class="button-item">
-              <button type="button">Маркетинг</button>
+              <button class="buttons" type="button">Приложения</button>
+            </li>
+            <li class="button-item">
+              <button class="buttons" type="button">Дизайн</button>
+            </li>
+            <li class="button-item">
+              <button class="buttons" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="portfolio-list">
@@ -177,33 +181,41 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <a href="./index.html" class="logo">Web Studio</a>
-        <address>
-          <span class="footer-title">г. Киев, пр-т Леси Украинки, 26</span>
-          <br />
-          <a href="info@example.com" class="footer-adress">info@example.com</a>
-          <br />
-          <a href="+380991111111" class="footer-adress">+38 099 111 11 11</a>
-        </address>
+    <footer class="footer">
+      <div class="container footer-blocks">
+        <div>
+          <a href="./index.html" class="logo"
+            >Web <span class="logo-color-footer">Studio</span></a
+          >
+          <address class="footer-nav">
+            <span class="footer-title">г. Киев, пр-т Леси Украинки, 26</span>
+            <br />
+            <a href="info@example.com" class="footer-adress"
+              >info@example.com</a
+            >
+            <br />
+            <a href="+380991111111" class="footer-adress">+38 099 111 11 11</a>
+          </address>
+        </div>
+        <div>
+          <b class="footer-title">присоединяйтесь</b>
+          <ul>
+            <li>
+              <a
+                href="#"
+                aria-label="ссылка на Instagram"
+                class="socials-link"
+              ></a>
+            </li>
+            <li><a href="#" aria-label="Twitter" class="socials-link"></a></li>
+            <li><a href="#" aria-label="Facebook" class="socials-link"></a></li>
+            <li><a href="#" aria-label="linkedin" class="socials-link"></a></li>
+          </ul>
+        </div>
+        <div>
+          <b class="footer-title">Подпишитесь на рассылку</b>
+        </div>
       </div>
-      <div>
-        <b class="footer-title">присоединяйтесь</b>
-        <ul>
-          <li>
-            <a
-              href=""
-              aria-label="ссылка на Instagram"
-              class="socials-link"
-            ></a>
-          </li>
-          <li><a href="" aria-label="Twitter" class="socials-link"></a></li>
-          <li><a href="" aria-label="Facebook" class="socials-link"></a></li>
-          <li><a href="" aria-label="linkedin" class="socials-link"></a></li>
-        </ul>
-      </div>
-      <p class="last-line">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
