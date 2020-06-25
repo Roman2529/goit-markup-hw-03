@@ -1,17 +1,14 @@
-
 :root {
-  --primary-text-color: #a0a0a0;
+  --primary-text-color: #757575;
   --title-text-color: #212121;
   --white-title-text-color: #ffffff;
   --accent-color: #2196f3;
   --footer-text-color: rgba(255, 255, 255, 0.6);
-  --last-content: rgba(255, 255, 255, 0.4);
-  --portfolio-button: #F5F4FA;
+  --portfolio-button: #f5f4fa;
   --portfolio-text: #757575;
-  --background-color-footer: #2F303A;
+  --background-color-footer: #2f303a;
+  --border-color-portfolio: #eeeeee;
 }
-
-
 
 .page {
   background-color: var(--white-title-text-color);
@@ -59,7 +56,6 @@ ul {
 .container.header {
   display: flex;
   align-items: center;
-
 }
 .site-nav {
   display: flex;
@@ -67,25 +63,24 @@ ul {
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
-} 
+}
 .site-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
   color: var(--title-text-color);
-  
+
   letter-spacing: 0.02em;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.site-nav .link-current {
   color: var(--accent-color);
 }
 .auth-nav {
@@ -109,7 +104,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
 }
-.adress-link:hover ,
+.adress-link:hover,
 .adress-link:focus {
   color: var(--accent-color);
 }
@@ -129,7 +124,6 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: blue;
-
 }
 .hero .hero-title,
 .hero .hero-link {
@@ -142,14 +136,15 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-
+  letter-spacing: 0.06em;
 }
 .hero .button {
   margin-top: 30px;
 
-  font-weight: 700;   
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  border: 1px solid;
 }
 .section-title {
   color: var(--title-text-color);
@@ -165,13 +160,13 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.section.team-section{
+.section.team-section {
   background-color: var(--portfolio-button);
 }
 
 /*advantages*/
 
-.advantages {
+.advantages-list {
   display: flex;
   padding-left: 0px;
 }
@@ -179,13 +174,12 @@ ul {
   margin-right: 30px;
 }
 .advantages-link {
-margin-left: auto;
-margin-right: auto;
-padding: 25px 100px;
-background-color: var(--portfolio-button);
-
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 100px;
+  background-color: var(--portfolio-button);
 }
-.advantages .advantages-title {
+.advantages .advantages-item-title {
   color: var(--title-text-color);
 
   margin-top: 30px;
@@ -198,13 +192,17 @@ background-color: var(--portfolio-button);
 .advantages-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  display: none; 
+  display: none;
 }
 .advantages-text {
   font-size: 14px;
   line-height: 1.71;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+.advantages-item {
+  width: 270px;
+  list-style: none;
 }
 
 /*specialty*/
@@ -217,8 +215,11 @@ background-color: var(--portfolio-button);
 .specialty .specialty-item:not(:last-child) {
   margin-right: 30px;
 }
+.specialty-item {
+  width: 370px;
+}
 .specialty-title {
-  color: var(--white-title-text-color); 
+  color: var(--white-title-text-color);
   background-color: var(--background-color-footer);
   padding-top: 27px;
   padding-bottom: 27px;
@@ -241,6 +242,10 @@ background-color: var(--portfolio-button);
 }
 .team .team-item:not(:last-child) {
   margin-right: 30px;
+}
+.team-item {
+  width: 270px;
+  background-color: var(--white-title-text-color);
 }
 .team-title {
   color: var(--title-text-color);
@@ -269,7 +274,6 @@ background-color: var(--portfolio-button);
 .customers-link:hover,
 .customers-link:focus {
   color: var(--accent-color);
-  
 }
 .customers {
   margin-top: 50px;
@@ -288,15 +292,24 @@ background-color: var(--portfolio-button);
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
-
 }
 /*footer*/
 .footer {
   background-color: var(--background-color-footer);
 }
+.container.footer-blocks {
+  display: flex;
+}
 .socials-link:hover,
 .socials-link:focus {
   color: var(--accent-color);
+}
+.footer-adress:hover,
+.footer-adress:focus {
+  color: var(--accent-color);
+}
+.footer-nav {
+  font-style: normal;
 }
 .footer-title {
   color: var(--white-title-text-color);
@@ -313,14 +326,6 @@ background-color: var(--portfolio-button);
 .socials-link:focus {
   color: var(--accent-color);
 }
-.last-line {
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 
 /*portfolio*/
 
@@ -331,7 +336,7 @@ background-color: var(--portfolio-button);
 }
 .button-link {
   color: var(--title-text-color);
-  background-color: var(--portfolio-button)
+  background-color: var(--portfolio-button);
 
   font-weight: 500;
   font-size: 16px;
@@ -339,7 +344,6 @@ background-color: var(--portfolio-button);
   text-align: center;
   padding-left: 0px;
   padding-top: 94px;
-  
 }
 .button-link .button-item:not(:last-child) {
   margin-right: 8px;
@@ -352,10 +356,13 @@ background-color: var(--portfolio-button);
 }
 .portfolio-list .portfolio-item:not(:last-child) {
   margin-right: 30px;
-
 }
 .portfolio-list .portfolio-item:nth-child(3n) {
   margin-right: 0px;
+}
+.portfolio-item {
+  width: 370px;
+  border: 1px solid var(--border-color-portfolio);
 }
 .portfolio-titles {
   color: var(--title-text-color);
@@ -364,13 +371,19 @@ background-color: var(--portfolio-button);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px 24px 2px;
 }
 .portfolio-text {
   color: var(--portfolio-text);
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  font-size: 16px;
+  line-height: 1.87;
   letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 2px 24px 20px;
 }
 .portfolio-text-accent {
   color: var(--white-title-text-color);
@@ -378,7 +391,9 @@ background-color: var(--portfolio-button);
 
   font-size: 18px;
   line-height: 1.56;
-  width: 322px;
+  display: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .portfolio-links {
   text-decoration: none;
