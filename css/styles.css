@@ -299,6 +299,7 @@ ul {
 }
 .container.footer-blocks {
   display: flex;
+  align-items: center;
 }
 .socials-link:hover,
 .socials-link:focus {
