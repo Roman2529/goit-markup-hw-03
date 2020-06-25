@@ -377,6 +377,9 @@ ul {
   width: 370px;
   border: 1px solid var(--border-color-portfolio);
 }
+.portfolio-list-text {
+  padding: 20px 24px;
+}
 .portfolio-titles {
   color: var(--title-text-color);
 
@@ -386,7 +389,6 @@ ul {
   letter-spacing: 0.06em;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 20px 24px 2px;
 }
 .portfolio-text {
   color: var(--portfolio-text);
@@ -396,7 +398,6 @@ ul {
   letter-spacing: 0.06em;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 2px 24px 20px;
 }
 .portfolio-text-accent {
   color: var(--white-title-text-color);
